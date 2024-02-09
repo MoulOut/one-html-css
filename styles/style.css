@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
 :root {
   --main-color: #272018;
   --secondary-color: #525837;
@@ -21,7 +22,7 @@ body {
 }
 
 .cabeçalho {
-  padding: 2% 0 0 15%;
+  padding: 5% 0 0 15%;
 }
 
 .cabeçalho_menu {
@@ -32,7 +33,7 @@ body {
 
 .cabeçalho_menu_link {
   font-family: var(--secondary-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--secondary-color);
   margin: 0 10px;
@@ -42,21 +43,22 @@ body {
 }
 
 main {
-  padding: 2% 15%;
+  padding: 5% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 82px;
 }
 
 section {
-  width: 615px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-family: var(--main-font);
 }
 
@@ -65,14 +67,14 @@ strong {
 }
 
 .paragrafo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: var(--secondary-font);
 }
 
 div {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,15 +85,16 @@ div {
 .botoes {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   color: var(--terciary-color);
-  width: 280px;
-  padding: 21.5px 0;
+  width: 50%;
+  padding: 21.5px;
   text-decoration: none;
   text-align: center;
   font-family: var(--secondary-font);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   border-radius: 8px;
   border: 2px solid var(--secondary-color);
 }
@@ -101,17 +104,37 @@ div {
 }
 
 .pfpic {
-  width: 40%;
+  width: 50%;
   border: 2px solid var(--secondary-color);
   border-radius: 16px;
 }
 
 footer {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: var(--secondary-color);
   color: var(--terciary-color);
   text-align: center;
   font-family: var(--secondary-font);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media(max-width:1000px){
+  .cabeçalho{
+    padding: 10%;
+  }
+
+  .cabeçalho_menu{
+    justify-content: center;
+  }
+
+  main{
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  section{
+    width: auto;
+  }
+
 }
